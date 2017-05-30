@@ -1,0 +1,7 @@
+package: msgbird
+import:
+- package: github.com/messagebird/go-rest-api
+  version: ~2.3.0
+devImport:
+- package: github.com/tsenart/vegeta
+  version: ~6.3.0
