@@ -6,9 +6,10 @@ COPY . .
 RUN apt-get update
 RUN apt-get install git curl netcat iproute2 net-tools telnet -y
 RUN apt-get install golang-go build-essential -y
+RUN go get github.com/Masterminds/glide
 
 RUN make init_linux
-RUN make install
+RUN make deps
 RUN make test
 RUN make build_linux
 
