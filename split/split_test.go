@@ -1,4 +1,4 @@
-package main
+package split
 
 import "testing"
 
@@ -23,4 +23,9 @@ func expectPartNumber(t *testing.T, parts []string, expected int) {
 	if n := len(parts); n != expected {
 		t.Error("Expected part number is", expected, ", got", n)
 	}
+}
+
+func TestAlternativeSplitter(t *testing.T) {
+	parts := RecursiveSplitter(baconText, make([]string, 0))
+	expectPartNumber(t, parts, 4)
 }
