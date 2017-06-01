@@ -9,6 +9,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/kisPocok/sms-gateway-api/logger"
 	messagebird "github.com/messagebird/go-rest-api"
 	vegeta "github.com/tsenart/vegeta/lib"
 )
@@ -32,6 +33,7 @@ func createTestServer() *Server {
 	return &Server{
 		port:    port,
 		version: "v1.0-beta",
+		console: logger.Logger{Disabled: true},
 		msgbird: MockClient{},
 	}
 }

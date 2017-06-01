@@ -4,19 +4,17 @@ import "fmt"
 
 // Logging define a basic logger class
 type Logging interface {
-	Log(s ...string)
+	Log(s string)
 }
 
 // Logger represents a simple reporter
-type Logger struct{}
-
-// Log echoes msg
-func (l Logger) Log(s ...string) {
-	fmt.Println(s)
+type Logger struct {
+	Disabled bool
 }
 
-// Null logs nothing
-type Null struct{}
-
 // Log echoes msg
-func (l Null) Log(s ...string) {}
+func (l Logger) Log(s string) {
+	if !l.Disabled {
+		fmt.Println(s)
+	}
+}

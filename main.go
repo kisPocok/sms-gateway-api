@@ -33,7 +33,7 @@ func main() {
 type Server struct {
 	port    int
 	version string
-	console logger.Logging
+	console logger.Logger
 	msgbird msgbirdClient
 }
 
