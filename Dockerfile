@@ -1,6 +1,6 @@
 FROM golang:1.8.0
 
-WORKDIR /www/go/src/msgbird
+WORKDIR /go/src/github.com/kisPocok/sms-gateway-api/
 COPY . .
 
 RUN apt-get update
