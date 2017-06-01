@@ -2,6 +2,11 @@ package: github.com/kisPocok/sms-gateway-api
 import:
 - package: github.com/messagebird/go-rest-api
   version: ~2.3.0
+- package: github.com/kisPocok/sms-gateway-api
+  libs:
+    - logger
+    - queue
+    - split
 testImport:
 - package: github.com/tsenart/vegeta
   version: ~6.3.0
