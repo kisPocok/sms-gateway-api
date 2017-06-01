@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"errors"
-	"msgbird/logger"
 	"net/http"
 	"net/http/httptest"
 	"net/url"
@@ -33,7 +32,6 @@ func createTestServer() *Server {
 	return &Server{
 		port:    port,
 		version: "v1.0-beta",
-		console: logger.Null{},
 		msgbird: MockClient{},
 	}
 }

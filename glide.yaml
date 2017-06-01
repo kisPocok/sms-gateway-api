@@ -1,4 +1,4 @@
-package: msgbird
+package: github.com/kisPocok/sms-gateway-api
 import:
 - package: github.com/messagebird/go-rest-api
   version: ~2.3.0

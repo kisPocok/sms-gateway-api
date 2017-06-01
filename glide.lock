@@ -1,5 +1,5 @@
-hash: fd27ecce2ccc704e2c3cb60f98fe658812caa5de5a95071f155807116596768a
-updated: 2017-06-01T01:29:47.13164872+02:00
+hash: bd3cb5174a2fa9da872e9e0eecea872e24929ecba82f9c0c012bcef9455cdac2
+updated: 2017-06-01T02:02:48.981557915+02:00
 imports:
 - name: github.com/messagebird/go-rest-api
   version: c8643b4c74a7b7b89565aa6fbfa77ec555a2c830

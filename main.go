@@ -15,9 +15,9 @@ import (
 	"errors"
 	"strconv"
 
-	"msgbird/logger"
-	Q "msgbird/queue"
-	"msgbird/split"
+	"github.com/kisPocok/sms-gateway-api/logger"
+	Q "github.com/kisPocok/sms-gateway-api/queue"
+	"github.com/kisPocok/sms-gateway-api/split"
 )
 
 //const apiKey = "0E8kldYVc5JwvaeXF2j0ew0ty" // account 1
